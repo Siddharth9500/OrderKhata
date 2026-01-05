@@ -1,0 +1,217 @@
+.order-details-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.details-header {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.details-header h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.details-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-card,
+.items-card,
+.summary-card,
+.notes-card,
+.actions-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+.detail-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.item-brand {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.item-quantity {
+  font-size: 14px;
+  color: #999;
+}
+
+.item-price-section {
+  text-align: right;
+}
+
+.item-unit-price {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.item-total-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.summary-row.total-row {
+  border-top: 2px solid #f0f0f0;
+  margin-top: 10px;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.notes-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.status-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.status-btn.seen {
+  background: #2196f3;
+}
+
+.status-btn.processing {
+  background: #9c27b0;
+}
+
+.status-btn.completed {
+  background: #4caf50;
+}
+
+.status-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .info-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+  }
+  
+  .item-price-section {
+    text-align: left;
+  }
+}

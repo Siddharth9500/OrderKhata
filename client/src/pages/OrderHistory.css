@@ -1,0 +1,154 @@
+.order-history-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.history-header {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.history-header h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0 20px 0;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-tab {
+  flex: 1;
+  padding: 10px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-tab.active {
+  background: #667eea;
+  color: white;
+}
+
+.history-content {
+  padding: 20px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.order-number {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.order-party {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.order-date {
+  font-size: 13px;
+  color: #999;
+}
+
+.order-status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.order-summary-box {
+  background: #f8f9ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.summary-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.summary-amount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.order-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view-details {
+  flex: 1;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-view-details:hover {
+  background: #5568d3;
+}
+
+.btn-reorder {
+  flex: 1;
+  padding: 12px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-reorder:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 480px) {
+  .order-card-actions {
+    flex-direction: column;
+  }
+}
